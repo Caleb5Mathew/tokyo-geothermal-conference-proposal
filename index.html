@@ -18,7 +18,7 @@
 .section-label{display:flex;justify-content:space-between;gap:8px;margin:15px 0 8px}.places{display:grid;gap:7px}.place,.hotel,.budget-item{border:1px solid var(--line);background:var(--white);border-radius:13px}.place[aria-current=true]{border-color:#7ba397}.place-head{width:100%;display:grid;grid-template-columns:31px 1fr 16px;align-items:center;text-align:left;gap:8px;padding:10px 12px;border:0;background:transparent}.place-head small,.stay-tab small,.route-step small{display:block;color:var(--quiet);font-size:.73rem;font-weight:500}.place-head b{font-size:.93rem}.pin-num{width:27px;height:27px;display:grid;place-items:center;border-radius:50%;background:var(--mint);color:var(--pine-dark);font-size:.72rem;font-weight:700}.place-body{padding:0 12px 11px;color:var(--quiet);font-size:.86rem}.place-body img{display:block;width:100%;max-height:158px;object-fit:cover;border-radius:9px;margin:0 0 8px}.place-body strong{color:var(--ink)}.place-body .actions{margin:8px 0 0}.note,.foot{font-size:.76rem;color:var(--quiet);margin:12px 0}.foot{border-top:1px solid var(--line);padding-top:11px;margin-top:20px}
 .panel-title{margin:6px 0 9px}.route-step{display:grid;grid-template-columns:33px 1fr 18px;align-items:center;gap:8px;width:100%;margin:7px 0;text-align:left;padding:10px;border:1px solid var(--line);background:var(--white);border-radius:12px}.route-step:hover{border-color:#789c90}.route-step .pin-num{background:var(--sand);color:#8a4937}.stay-scroll{margin-bottom:7px}.stay-tab{text-align:left;max-width:145px}.stay-tab[aria-pressed=true] small{color:#e8f5ee}.hotel,.budget-item{padding:12px;margin:9px 0;font-size:.87rem}.hotel h4,.budget-item h3{font-size:1.05rem;margin:3px 0 5px}.hotel .eyebrow{font-size:.64rem}.hotel p,.budget-item p{color:var(--quiet)}.hotel .rates{background:var(--mint);padding:8px;border-radius:8px;margin-top:9px}.hotel .rates p{color:var(--ink)}.hotel .actions{margin:8px 0 0}.fx{font-size:.81rem;color:var(--quiet)}
 .map-area{position:relative;min-height:0;background:#b9d3df;isolation:isolate}.map-area #map{position:absolute;inset:0}.map-top,.map-action,.map-key,.map-note,.map-error{z-index:2;position:absolute;background:#fffef7f3;box-shadow:var(--shadow);border-radius:12px;border:1px solid #e3e9dc}.map-top{top:16px;left:16px;padding:11px 14px;max-width:min(280px,57%);pointer-events:none}.map-top small,.map-top strong{display:block}.map-top strong{font-size:1rem}.map-top .note{margin:2px 0 0;line-height:1.35}.map-action{top:16px;right:16px;white-space:nowrap;color:var(--pine-dark)}.map-key,.map-note{bottom:26px;padding:8px 10px;font-size:.72rem;color:var(--quiet)}.map-key{left:13px;display:flex;gap:10px;flex-wrap:wrap}.map-note{right:13px;max-width:255px}.map-key i{width:8px;height:8px;display:inline-block;border-radius:50%;margin-right:3px;background:var(--pine)}.map-key .optional{background:#987b41}.map-key .base{background:var(--terra)}.map-error{bottom:72px;left:14px;padding:7px 10px;font-size:.8rem}
-.marker{width:31px;height:31px;border-radius:50%;display:grid;place-items:center;border:2.5px solid white;background:var(--pine);box-shadow:0 2px 7px #132b3390;color:white;font-weight:700;font-size:.84rem;padding:0}.marker.base{background:var(--terra)}.marker.optional{background:#927238}.marker.selected{outline:3px solid #284b4b70;z-index:2}.maplibregl-ctrl-bottom-right{right:3px}.maplibregl-ctrl-top-right{top:60px;right:6px}.maplibregl-popup-content{font-family:'DM Sans',system-ui,sans-serif;max-width:200px}.maplibregl-popup-content strong{display:block;margin-right:7px}
+.marker{width:31px;height:31px;border-radius:50%;display:grid;place-items:center;border:2.5px solid white;background:var(--pine);box-shadow:0 2px 7px #132b3390;color:white;font-weight:700;font-size:.84rem;padding:0}.marker.conference{background:#a35741;box-shadow:0 0 0 8px #a3574126,0 2px 7px #132b3390}.marker.base{background:var(--terra)}.marker.optional{background:#927238}.marker.selected{outline:3px solid #284b4b70;z-index:2}.maplibregl-ctrl-bottom-right{right:3px}.maplibregl-ctrl-top-right{top:60px;right:6px}.maplibregl-popup-content{font-family:'DM Sans',system-ui,sans-serif;max-width:200px}.maplibregl-popup-content strong{display:block;margin-right:7px}
 @media(min-width:1700px){.layout{grid-template-columns:455px minmax(0,1fr)}}
 @media(max-width:900px){.layout{grid-template-columns:365px minmax(0,1fr)}.map-note{display:none}.header-actions{gap:8px}}
 @media(max-width:700px){.top{height:auto;min-height:64px;padding:9px 12px;gap:6px}.brand{gap:8px}.seal{width:32px;height:32px;font-size:.95rem}.brand h1{font-size:1.21rem;white-space:normal}.brand small{font-size:.55rem}.header-actions>a{font-size:.7rem}.stamp{display:none}.layout{height:auto;display:flex;flex-direction:column;min-height:0}.map-area{order:-1;height:43dvh;min-height:255px;max-height:430px}.sidebar{border-right:0;padding:13px 13px 22px;overflow:visible}.map-top,.map-action{top:8px}.map-top{left:8px;padding:7px 8px}.map-top .note{display:none}.map-action{right:8px;padding:7px;font-size:.74rem}.map-key{bottom:21px}.hero{height:170px}}
@@ -27,7 +27,7 @@
 <script defer src="https://cdn.jsdelivr.net/npm/maplibre-gl@5.12.0/dist/maplibre-gl.js"></script>
 </head>
 <body>
-<header class="top"><div class="brand"><span class="seal" aria-hidden="true">JP</span><div><h1>Japan trip map</h1><small>Conference proposal · Nov 21–22</small></div></div><div class="header-actions"><span class="stamp">20 Nov – 3 Dec · 13 nights</span><a href="https://docs.google.com/document/d/1utxwXzeao2iQE4m3b61iQ29hARzeB86zT7853xJNnXM/edit?tab=t.l87m9uf3ur3i" target="_blank" rel="noopener noreferrer">↗ Written guide</a></div></header>
+<header class="top"><div class="brand"><span class="seal" aria-hidden="true">JP</span><div><h1>Japan trip map</h1><small>Conference concept · Nov 21–22</small></div></div><div class="header-actions"><span class="stamp">20 Nov – 3 Dec · 13 nights</span><a href="https://docs.google.com/document/d/1utxwXzeao2iQE4m3b61iQ29hARzeB86zT7853xJNnXM/edit?tab=t.l87m9uf3ur3i" target="_blank" rel="noopener noreferrer">↗ Written guide</a></div></header>
 <main class="layout">
 <aside class="sidebar" aria-label="Japan itinerary">
 <nav class="modes" role="tablist" aria-label="Itinerary views">
@@ -37,7 +37,7 @@
 <button type="button" id="mode-budget" role="tab" aria-controls="panel" data-mode="budget">Budget &amp; logistics</button>
 </nav>
 <section id="panel" role="tabpanel" aria-labelledby="mode-day"></section>
-<footer class="foot">Conference on Nov 21–22 is a proposal; venues are unbooked. Hotel rates are estimates. Photos from Wikimedia Commons. <a href="https://cosmic-shortbread-6b508b.netlify.app/" target="_blank" rel="noopener noreferrer">Original field atlas</a>.</footer>
+<footer class="foot">Fictional conference concept · Nov 21–22. Hotel rates are estimates. Photos from Wikimedia Commons. <a href="https://cosmic-shortbread-6b508b.netlify.app/" target="_blank" rel="noopener noreferrer">Original field atlas</a>.</footer>
 </aside>
 <section class="map-area" aria-label="Interactive Japan itinerary map">
 <div id="map"></div>
@@ -139,24 +139,22 @@
       "label": "SAT · Nov 21 · TOKYO",
       "title": "Geothermal conference · Day 1",
       "base": "Overnight: Ueno / Nippori",
-      "cost": "8:30 AM–6:00 PM JST · Full day",
+      "cost": "Full day · Tokyo",
       "tag": "Proposed conference",
-      "intro": "Proposed all-day geothermal conference at Asakusa View Hotel. A hotel meeting room near the original Asakusa and Kappabashi stops. Venue and program are unconfirmed; no booking has been made.",
+      "intro": "Geothermal conference concept in Asakusa, close to the original day’s route.",
       "hotel": "Sakura Hotel Nippori  Tokyo / first stay",
       "stay": 0,
       "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Sensoji_2023.jpg/960px-Sensoji_2023.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
       "transit": "https://www.google.com/maps/dir/?api=1&origin=Ueno+Station+Tokyo&destination=Asakusa+View+Hotel&travelmode=transit",
-      "transitLabel": "↗ Transit to proposed venue",
+      "transitLabel": "↗ Transit to conference area",
       "stops": [
         {
           "id": "conference-1",
-          "name": "Asakusa View Hotel",
-          "kind": "Proposed venue · Asakusa · East Tokyo",
+          "name": "Asakusa conference area",
+          "kind": "Concept area · approx. 350 m radius",
           "description": [
-            "A hotel meeting room near the original Asakusa and Kappabashi stops.",
-            "Schedule: 8:30 AM–6:00 PM Japan time. All sessions in this building.",
-            "Status: Proposed and unbooked. Room, availability and speakers to be confirmed.",
-            "Program: Geothermal foundations, drilling and reservoir engineering."
+            "Focal point: Asakusa View Hotel.",
+            "Illustrative location only; no event or venue booking."
           ],
           "maps": "https://www.google.com/maps/search/?api=1&query=Asakusa+View+Hotel+Tokyo",
           "wiki": "https://www.viewhotels.jp/asakusa/meeting/",
@@ -164,21 +162,11 @@
             139.7924,
             35.7158
           ],
-          "official": true
+          "official": true,
+          "radius": 350
         }
       ],
-      "agenda": [
-        "8:30–9:00 AM: Arrival and morning coffee",
-        "9:00–10:15 AM: Geothermal opportunities and resource types",
-        "10:15–10:30 AM: Break",
-        "10:30 AM–noon: Subsurface characterization",
-        "Noon–1:00 PM: Lunch and discussion",
-        "1:00–2:30 PM: Drilling and well design",
-        "2:30–2:45 PM: Break",
-        "2:45–4:15 PM: Reservoir engineering workshop",
-        "4:15–5:15 PM: Technical case studies",
-        "5:15–6:00 PM: Networking and recap"
-      ]
+      "conference": true
     },
     {
       "day": "SUN",
@@ -187,24 +175,22 @@
       "label": "SUN · Nov 22 · TOKYO",
       "title": "Geothermal conference · Day 2",
       "base": "Overnight: Ueno / Nippori",
-      "cost": "8:30 AM–6:00 PM JST · Full day",
+      "cost": "Full day · Tokyo",
       "tag": "Proposed conference",
-      "intro": "Proposed all-day geothermal conference at Shibuya Hikarie Conference. 11th-floor meeting facilities in Shibuya Hikarie, at the original Shibuya stop. Venue and program are unconfirmed; no booking has been made.",
+      "intro": "Geothermal conference concept in Shibuya, close to the original day’s route.",
       "hotel": "Sakura Hotel Nippori  Tokyo / first stay",
       "stay": 0,
       "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Shibuya_Crossing%2C_Aerial.jpg/960px-Shibuya_Crossing%2C_Aerial.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
       "transit": "https://www.google.com/maps/dir/?api=1&origin=Ueno+Station+Tokyo&destination=Shibuya+Hikarie+Conference&travelmode=transit",
-      "transitLabel": "↗ Transit to proposed venue",
+      "transitLabel": "↗ Transit to conference area",
       "stops": [
         {
           "id": "conference-2",
-          "name": "Shibuya Hikarie Conference",
-          "kind": "Proposed venue · Shibuya · West Tokyo",
+          "name": "Shibuya conference area",
+          "kind": "Concept area · approx. 350 m radius",
           "description": [
-            "11th-floor meeting facilities in Shibuya Hikarie, at the original Shibuya stop.",
-            "Schedule: 8:30 AM–6:00 PM Japan time. All sessions in this building.",
-            "Status: Proposed and unbooked. Room, availability and speakers to be confirmed.",
-            "Program: Innovation, monitoring and project development."
+            "Focal point: Shibuya Hikarie Conference.",
+            "Illustrative location only; no event or venue booking."
           ],
           "maps": "https://www.google.com/maps/search/?api=1&query=Shibuya+Hikarie+Conference+Tokyo",
           "wiki": "https://www.hikarie.jp/business/facility/",
@@ -212,21 +198,11 @@
             139.703,
             35.659
           ],
-          "official": true
+          "official": true,
+          "radius": 350
         }
       ],
-      "agenda": [
-        "8:30–9:00 AM: Arrival and morning coffee",
-        "9:00–10:15 AM: Next-generation geothermal",
-        "10:15–10:30 AM: Break",
-        "10:30 AM–noon: Data, monitoring and digital tools",
-        "Noon–1:00 PM: Lunch and discussion",
-        "1:00–2:30 PM: Project development and economics",
-        "2:30–2:45 PM: Break",
-        "2:45–4:15 PM: Responsible development workshop",
-        "4:15–5:15 PM: Project concept roundtable",
-        "5:15–6:00 PM: Closing discussion and networking"
-      ]
+      "conference": true
     },
     {
       "day": "MON",
@@ -1764,9 +1740,8 @@ window.addEventListener('DOMContentLoaded', () => {
       <div class="chips"><span class="chip cost">${copy(d.cost)}</span></div>
       <p class="intro">${html(d.intro)}</p>
       ${d.stay>=0 ? `<div class="stay-callout"><button type="button" data-stay-jump="${d.stay}">Compare hotels</button></div>` : ''}
-      <div class="section-label">${d.agenda ? 'Conference venue' : 'Stops'}</div>
+      <div class="section-label">${d.conference ? 'Conference area' : 'Stops'}</div>
       <div class="places">${d.stops.map((s,i)=>placeCard(s,i)).join('')}</div>
-      ${d.agenda ? `<div class="section-label">Proposed full-day program · JST</div><div class="budget-item">${d.agenda.map(line=>`<p>${html(line)}</p>`).join('')}</div>` : ''}
       ${opts.length ? `<div class="callout"><b>Optional</b> · ${html(opts.map(s=>s.name).join(' · '))}<div class="actions"><button class="action" data-optional type="button" aria-pressed="${showOptional}">${showOptional?'Hide':'Show'} optional pins</button></div></div>` : ''}
       ${showOptional && opts.length ? `<div class="places">${opts.map((s,i)=>placeCard(s,i,true)).join('')}</div>` : ''}
       <div class="actions">${link(d.transit,d.transitLabel)}<button class="action" data-fit type="button">Fit day’s stops</button></div>
@@ -1914,15 +1889,25 @@ window.addEventListener('DOMContentLoaded', () => {
     element.addEventListener('click',event=>{event.stopPropagation();click();});
     markers.push(new maplibregl.Marker({element,anchor:'center'}).setLngLat(stop.pos).addTo(map));
   }
+  function conferenceAreas() {
+    const selected = currentMode==='day' ? [days[dayIndex]] : currentMode==='overview' ? days : [];
+    return {type:'FeatureCollection',features:selected.filter(d=>d.conference).flatMap(d=>d.stops.map(stop=>{
+      const [lng,lat]=stop.pos, radius=stop.radius/111320;
+      const ring=Array.from({length:65},(_,i)=>{const a=i/64*Math.PI*2;return [lng+Math.cos(a)*radius/Math.cos(lat*Math.PI/180),lat+Math.sin(a)*radius];});
+      return {type:'Feature',properties:{},geometry:{type:'Polygon',coordinates:[ring]}};
+    }))};
+  }
   function updateMap(fit) {
     popup?.remove();
     markers.forEach(marker=>marker.remove());
     markers=[];
+    map?.getSource('conference-areas')?.setData(conferenceAreas());
+    document.querySelector('.map-note').textContent=currentMode==='day' && days[dayIndex].conference ? 'Shaded circle: approximate conference area.' : 'Lines show stop order.';
     if(currentMode==='day'){
       const d=days[dayIndex], opts=showOptional?optionalIndex(dayIndex):[];
       const active=[...d.stops,...opts].find(s=>s.id===activeStop);
       mapText(d.label,active?.name ?? d.title,active?.description[0]?.replace(/^Why we're here: /,'') ?? 'Select a pin or stop');
-      d.stops.forEach((s,i)=>addPin(s,i+1,s.optional?'optional':'',()=>selectStop(s.id,true)));
+      d.stops.forEach((s,i)=>addPin(s,i+1,s.radius?'conference':s.optional?'optional':'',()=>selectStop(s.id,true)));
       opts.forEach(s=>addPin(s,'+', 'optional',()=>selectStop(s.id,true)));
       setLine(d.stops.filter(s=>!s.optional).map(s=>s.pos));
       if(fit)mapBounds([...d.stops,...opts].map(s=>s.pos));
@@ -1952,9 +1937,18 @@ window.addEventListener('DOMContentLoaded', () => {
   try {
     map=new maplibregl.Map({container:stage,style,center:[137,36],zoom:5,renderWorldCopies:false,attributionControl:{compact:true},maxZoom:17});
     map.addControl(new maplibregl.NavigationControl({showCompass:false}),'top-right');
-    map.on('error',()=>{if(!map.loaded()) document.getElementById('map-error').hidden=false;});
-    map.on('load',()=>{
+    let usingFallback=false;
+    map.on('error',event=>{
+      if(!usingFallback && (event.sourceId==='openmaptiles' || event.sourceId==='ne2_shaded' || !map.isStyleLoaded())) {
+        usingFallback=true;
+        map.setStyle({version:8,sources:{fallback:{type:'raster',tiles:['https://tile.openstreetmap.org/{z}/{x}/{y}.png'],tileSize:256,attribution:'© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'}},layers:[{id:'fallback',type:'raster',source:'fallback'}]});
+      } else if(event.sourceId==='fallback') document.getElementById('map-error').hidden=false;
+    });
+    map.on('style.load',()=>{
       document.getElementById('map-error').hidden=true;
+      map.addSource('conference-areas',{type:'geojson',data:conferenceAreas()});
+      map.addLayer({id:'conference-fill',type:'fill',source:'conference-areas',paint:{'fill-color':'#a35741','fill-opacity':.16}});
+      map.addLayer({id:'conference-outline',type:'line',source:'conference-areas',paint:{'line-color':'#a35741','line-width':2,'line-dasharray':[3,2]}});
       map.addSource('stop-order',{type:'geojson',data:route});
       map.addLayer({id:'stop-order',type:'line',source:'stop-order',paint:{'line-color':'#3b6865','line-width':2.5,'line-dasharray':[2,2],'line-opacity':.76}});
     });
